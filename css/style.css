@@ -292,3 +292,70 @@ body {
   color: var(--branco);
 }
 
+/* ===== FORMULÁRIO DE CONTATO ===== */
+.container-contato {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-contato {
+  margin-top: 30px;
+  background: var(--branco);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-contato .campo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-contato label {
+  display: block;
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 5px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: var(--azul);
+  outline: none;
+}
+
+.form-contato button {
+  background: var(--azul);
+  color: var(--branco);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-contato button:hover {
+  background: var(--azul-claro);
+}
+
+.mensagem-status {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+

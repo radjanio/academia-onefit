@@ -112,12 +112,34 @@
     </div>
   </section>
 
-  <!-- Contato -->
-  <section class="contato" id="contato">
+  <!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="container-contato">
     <h3>Entre em Contato</h3>
-    <p>Quer fazer parte da nossa família OneFit? Fale conosco!</p>
-    <a href="mailto:contato@onefit.com.br" class="btn">Enviar E-mail</a>
-  </section>
+    <p>Envie uma mensagem e nossa equipe retornará o mais rápido possível 💪</p>
+
+    <form id="contatoForm" class="form-contato">
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Enviar Mensagem</button>
+      <p id="resposta" class="mensagem-status"></p>
+    </form>
+  </div>
+</section>
+
 
   <!-- Rodapé -->
   <footer class="footer">
