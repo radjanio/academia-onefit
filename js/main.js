@@ -36,7 +36,7 @@ document.getElementById('contatoForm').addEventListener('submit', async (e) => {
   resposta.textContent = "Enviando mensagem...";
 
   try {
-    const res = await fetch("https://garnett-uninfringed-originally.ngrok-free.dev", {
+    const res = await fetch("https://garnett-uninfringed-originally.ngrok-free.dev/webhook/contato", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
