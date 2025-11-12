@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos OneFit - Academia do Bem</title>
+  <link rel="stylesheet" href="css/planos.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="img/OneFit-logo.png" alt="Logo OneFit">
+        <h1>OneFit <span>– Amigos do Bem</span></h1>
+      </div>
+      <nav class="nav">
+        <ul>
+            <li><a href="index.html#home">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#profissionais">Profissionais</a></li>
+            <li><a href="planos.html" class="ativo">Planos</a></li>
+            <li><a href="produtos.html" class="ativo">Produtos</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" onclick="menuShow()">
+        <img class="icon" src="img/on-menu.png" alt="Menu">
+      </button>
+    </div>
+        <div class="menu-mobile">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#profissionais">Profissionais</a></li>
+        <li><a href="planos.html" class="ativo">Planos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Seção Planos -->
+  <section class="planos" id="planos">
+    <h2>Planos OneFit</h2>
+    <p class="subtitulo">Escolha o plano que mais combina com você</p>
+
+    <!-- ===== Planos Básicos ===== -->
+    <h3 class="categoria">Planos Básicos</h3>
+    <div class="grid-planos">
+
+      <div class="plano-card">
+        <h4>OneFit Start</h4>
+        <p class="etaria">Adolescentes (13–17 anos)</p>
+        <p class="preco">R$ 99 / mês</p>
+        <p class="detalhes">R$ 270 trimestral • R$ 960 anual</p>
+        <ul>
+          <li>Acesso total à musculação e aulas em grupo</li>
+          <li>Orientação com instrutor de sala</li>
+          <li>Treino personalizado trimestral</li>
+          <li>Avaliação física semestral</li>
+          <li>10% de desconto em suplementos</li>
+        </ul>
+        <a href="#" class="btn-plano">Assinar Agora</a>
+      </div>
+
+      <div class="plano-card destaque">
+        <h4>OneFit Power</h4>
+        <p class="etaria">Adultos (18–59 anos)</p>
+        <p class="preco">R$ 139 / mês</p>
+        <p class="detalhes">R$ 390 trimestral • R$ 1.380 anual</p>
+        <ul>
+          <li>Acesso completo à academia</li>
+          <li>Musculação + CrossFit básico + artes marciais</li>
+          <li>Avaliação física bimestral</li>
+          <li>Orientação de treino com personal de sala</li>
+          <li>15% de desconto em suplementos</li>
+        </ul>
+        <a href="#" class="btn-plano">Assinar Agora</a>
+      </div>
+
+      <div class="plano-card">
+        <h4>OneFit Master</h4>
+        <p class="etaria">Idosos (60+ anos)</p>
+        <p class="preco">R$ 109 / mês</p>
+        <p class="detalhes">R$ 300 trimestral • R$ 1.080 anual</p>
+        <ul>
+          <li>Treinos adaptados para mobilidade e equilíbrio</li>
+          <li>Acompanhamento fisioterápico mensal</li>
+          <li>Aulas de alongamento e funcional leve</li>
+          <li>Avaliação postural trimestral</li>
+          <li>20% de desconto em suplementos</li>
+        </ul>
+        <a href="#" class="btn-plano">Assinar Agora</a>
+      </div>
+
+      <div class="plano-card">
+        <h4>OneFit Plus</h4>
+        <p class="etaria">PCD (Pessoa com Deficiência)</p>
+        <p class="preco">R$ 119 / mês</p>
+        <p class="detalhes">R$ 330 trimestral • R$ 1.200 anual</p>
+        <ul>
+          <li>Acesso total às áreas da academia</li>
+          <li>Treinos adaptados e acompanhamento inclusivo</li>
+          <li>Supervisão de fisioterapeuta especializado</li>
+          <li>Avaliação individualizada trimestral</li>
+          <li>25% de desconto em suplementos</li>
+        </ul>
+        <a href="#" class="btn-plano">Assinar Agora</a>
+      </div>
+    </div>
+
+    <!-- ===== Planos Premium ===== -->
+    <h3 class="categoria">Planos Premium</h3>
+    <div class="grid-planos">
+
+      <div class="plano-card destaque">
+        <h4>OneFit Elite</h4>
+        <p class="etaria">Adultos</p>
+        <p class="preco">R$ 249 / mês</p>
+        <p class="detalhes">R$ 690 trimestral • R$ 2.400 anual</p>
+        <ul>
+          <li>Personal trainer 3x por semana</li>
+          <li>Avaliação física mensal</li>
+          <li>Consultoria nutricional a cada 45 dias</li>
+          <li>Treinos personalizados no app</li>
+          <li>Acesso a todas as modalidades</li>
+          <li>20% de desconto em suplementos</li>
+        </ul>
+        <a href="#" class="btn-plano">Assinar Agora</a>
+      </div>
+
+      <div class="plano-card">
+        <h4>OneFit Performance</h4>
+        <p class="etaria">Atletas e CrossFit Lovers</p>
+        <p class="preco">R$ 299 / mês</p>
+        <p class="detalhes">R$ 810 trimestral • R$ 2.820 anual</p>
+        <ul>
+          <li>Treinos de alta performance</li>
+          <li>Personal até 5x por semana</li>
+          <li>Consultoria nutricional mensal</li>
+          <li>Fisioterapia inclusa 2x/mês</li>
+          <li>Avaliação física e metabólica mensal</li>
+          <li>30% de desconto em suplementos</li>
+        </ul>
+        <a href="#" class="btn-plano">Assinar Agora</a>
+      </div>
+
+      <div class="plano-card">
+        <h4>OneFit Balance</h4>
+        <p class="etaria">Idosos e PCD</p>
+        <p class="preco">R$ 229 / mês</p>
+        <p class="detalhes">R$ 630 trimestral • R$ 2.160 anual</p>
+        <ul>
+          <li>Personal especializado em reabilitação</li>
+          <li>Fisioterapia preventiva mensal</li>
+          <li>Acompanhamento nutricional</li>
+          <li>Acesso total à academia e aulas leves</li>
+          <li>Treinos supervisionados</li>
+          <li>25% de desconto em suplementos</li>
+        </ul>
+        <a href="#" class="btn-plano">Assinar Agora</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2025 OneFit – Academia do Bem. Todos os direitos reservados.</p>
+    <div class="social">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968812.png" alt="TikTok"></a>
+    </div>
+  </footer>
+</body>
+</html>

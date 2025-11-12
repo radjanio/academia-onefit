@@ -1,0 +1,244 @@
+:root {
+  --azul: #0d47a1;
+  --azul-claro: #2196f3;
+  --cinza: #f5f5f5;
+  --escuro: #1a1a1a;
+  --branco: #fff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: var(--cinza);
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: var(--branco);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img { width: 100px; height: auto; }
+.logo h1 { color: var(--azul); font-size: 1.5rem; }
+.logo span { color: #444; }
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--azul);
+  font-weight: 600;
+  transition: 0.3s;
+}
+.nav a:hover {
+  color: var(--azul-claro);
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  display: none;
+}
+.menu-btn img { width: 32px; }
+
+.menu-mobile {
+  display: none;
+  background: var(--branco);
+  text-align: center;
+}
+.menu-mobile.open { display: block; }
+.menu-mobile a {
+  display: block;
+  padding: 10px;
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: 500;
+}
+.menu-mobile a:hover { background: var(--azul); color: var(--branco); }
+
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .menu-btn { display: block; }
+  .logo img { width: 80px; }
+}
+
+/* ===== SEÇÃO PLANOS ===== */
+.planos {
+  padding: 120px 5% 80px;
+  text-align: center;
+}
+.planos h2 {
+  font-size: 2.5rem;
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+.subtitulo {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+.categoria {
+  color: var(--azul-claro);
+  margin: 60px 0 25px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* ===== CARDS ===== */
+.grid-planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.plano-card {
+  background: var(--branco);
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  width: 290px;
+  padding: 25px 20px;
+  transition: 0.3s;
+}
+.plano-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.plano-card h4 {
+  color: var(--azul);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+.etaria {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+.preco {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--azul-claro);
+}
+.detalhes {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.plano-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.plano-card ul li {
+  margin: 8px 0;
+  font-size: 0.92rem;
+  padding-left: 15px;
+  position: relative;
+}
+.plano-card ul li::before {
+  content: "✔";
+  color: var(--azul-claro);
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.btn-plano {
+  display: inline-block;
+  background: var(--azul);
+  color: var(--branco);
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-plano:hover { background: var(--azul-claro); }
+
+/* ===== DESTAQUE ===== */
+.destaque {
+  border: 3px solid var(--azul-claro);
+  transform: scale(1.03);
+}
+.destaque:hover {
+  transform: scale(1.06);
+}
+
+/* ===== RODAPÉ ===== */
+.footer {
+  background: var(--escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+}
+.footer .social img {
+  width: 30px;
+  margin: 10px;
+  transition: 0.3s;
+}
+.footer .social img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .grid-planos { flex-direction: column; align-items: center; }
+  .plano-card { width: 90%; }
+}
+
+/* ===== MENU RESPONSIVO ===== */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-btn .icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none; /* Esconde o menu normal */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav ul.active {
+    display: flex; /* Mostra quando abrir */
+  }
+
+  .menu-btn {
+    display: block; /* Mostra o botão só no mobile */
+  }
+}
+
+
+
