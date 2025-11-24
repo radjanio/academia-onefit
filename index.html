@@ -119,16 +119,34 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer class="footer">
-    <p>&copy; 2025 OneFit – Academia do Bem. Todos os direitos reservados.</p>
-    <div class="social">
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png" alt="Facebook"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968812.png" alt="TikTok"></a>
-    </div>
-  </footer>
+<footer class="footer">
+        <p>&copy; 2025 OneFit – Academia do Bem. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png" alt="Facebook"></a>
+            <a href="#"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968812.png" alt="TikTok"></a></a>
+        </div>
+    </footer>
 
-  <script src="js/main.js"></script>
+    <button id="chat-toggle-btn" class="chat-toggle-btn">
+        <img src="https://cdn-icons-png.flaticon.com/128/471/471662.png" alt="Chat" class="chat-icon">
+    </button>
+
+    <div id="chatbot-window" class="chatbot-window">
+        <div class="chatbot-header">
+            <h4>🤖 OneFit Bot</h4>
+            <button class="close-btn" onclick="toggleChat(false)">X</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot-message">Olá! Sou o OneFit Bot. Posso ajudar com informações sobre planos, horários e serviços.</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
 </body>
 </html>
